@@ -1,0 +1,12 @@
+@media all and (max-width: 991px) {
+  .account-pages.vh-100 {
+    height: unset !important; }
+    .account-pages.vh-100 .row.vh-100 {
+      height: unset !important;
+      flex-direction: column-reverse; }
+      .account-pages.vh-100 .row.vh-100 left {
+        height: unset !important; }
+      .account-pages.vh-100 .row.vh-100 .logo {
+        margin: auto; } }
+
+/*# sourceMappingURL=my-media.css.map */

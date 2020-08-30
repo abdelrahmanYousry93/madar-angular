@@ -1,0 +1,18 @@
+@media all and (max-width : 991px) {
+	.account-pages.vh-100  {
+	    height: unset !important;
+
+	    .row.vh-100{
+	    	height: unset !important;
+	    	flex-direction: column-reverse;
+
+	    	left {
+	    		height: unset !important;
+	    	}
+
+			.logo{
+				margin: auto;
+			}
+	    }
+	}
+}
