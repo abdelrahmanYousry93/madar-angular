@@ -1,0 +1,112 @@
+
+                                <div class="card-box info-box company-info-content">
+
+                                    <div style="height: 100%;" class="recievers-list d-flex flex-direction-column justify-content-between">
+
+                                            <div>
+                                                    <a href="#" class="mb-3" style="color: #000"> <i class="fa fa-chevron-left"></i> Back </a>
+
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+
+                                                    <h4> Add New Contracted Fleet </h4>
+                                                    <div class="actions">
+                                                        <a class="btn btn-plus mr-2 ml-2" [routerLink]="" (click)="showDialog()"> <i class="fas fa-plus-circle"></i> Invite Fleet </a>
+                                                    </div>
+
+
+                                                    <!-- Modal -->
+                                                    <div id="invite-fleet" class="modal-sm modal-demo bs-example-modal-sm">
+                                                        <button type="button" class="close" onclick="Custombox.modal.close();">
+                                                            <span>&times;</span><span class="sr-only">Close</span>
+                                                        </button>
+                                                        <h4 class="custom-modal-title"> Invite Fleet </h4>
+                                                   
+                                                    </div>
+
+
+
+                                                </div>
+
+
+                                                <form>
+
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" class="form-control" id="" placeholder="Search ...">
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th> Fleet Name </th>
+                                                            <th> Shipments </th>
+                                                            <th> Drivers </th>
+                                                            <th> Track Types </th>
+                                                            <th> Places Coverd </th>
+                                                            <th> Range amount  </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            
+                                                        <tr> 
+                                                            <td> Azar Hosseini </td>
+                                                            <td> 43456346 </td>
+                                                            <td> 433 </td> 
+                                                            <td> <span class="badge badge-custom"> Truck </span> <span class="badge badge-custom"> +3 </span> </td> 
+                                                            <td> Mekka - Riydah </td> 
+                                                            <td> 1234 SAR </td> 
+
+                                                        </tr>
+
+                                                            
+                                                        <tr> 
+                                                            <td> Azar Hosseini </td>
+                                                            <td> 43456346 </td>
+                                                            <td> 433 </td> 
+                                                            <td> <span class="badge badge-custom"> Truck </span> <span class="badge badge-custom"> +3 </span> </td> 
+                                                            <td> Mekka - Riydah </td> 
+                                                            <td> 1234 SAR </td> 
+                                                        </tr>
+
+ 
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+
+
+     
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <a class="btn btn-custom1" [routerLink]="['/location/contracts']"> Cancel </a>
+                                                <a class="btn btn-primary" [routerLink]="['/location/contractpublic']"> Next </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p-dialog header="Invite Fleet" [(visible)]="displayModal" [modal]="true" [style]="{width: '25vw'}" [baseZIndex]="10000"
+                                    [draggable]="false" [resizable]="false">
+                                    <div class="custom-modal-text">
+
+                                        <form>
+
+                                            <div class="form-group mb-3">
+                                                <label for="inputEmail4" class="col-form-label"> Email Address </label>
+                                                <input type="text" class="form-control" id="" placeholder="Enter Email Adress">
+                                            </div> 
+
+                                        </form>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-1">
+                                            <a style="color:#2f5cbd" class="btn btn-custom1" href="#"> Cancel </a>
+                                            <a class="btn btn-primary" href="#"> Confirm </a>
+                                        </div>
+
+                                    </div>   
+                                
+                                </p-dialog>

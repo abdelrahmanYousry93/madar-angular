@@ -1,0 +1,263 @@
+   <!-- Start Content-->
+   <div class="container-fluid">
+ 
+    <div class="d-flex align-items-center justify-content-between mt-3">
+        <h3 class="mb-2"> Dashboard </h3>    
+        <div class="btns">
+             <div class="dropdown for-table notification-list" style="position: relative;">
+                
+                <a id="datepicker-autoclose" class="btn btn-state nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> Date: All time <i class="fa fa-chevron-down"></i> </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="card-box dashboard-card"> 
+                <div class="one-block d-flex align-items-center justify-content-start">
+                    <div class="left">
+                        <div class="img-container" style="background: #eff2fc;">
+                            <img class="img-fluid" src="assets/images/icon-01.png">
+                        </div>
+                    </div>                                
+                    <div class="right">
+                        <label> Completed Shipments </label>
+                        <h4> 460</h4>
+                    </div>
+                </div>
+            </div> <!-- card-box -->
+        </div> <!-- col-md-3 -->
+
+        <div class="col-md-3">
+            <div class="card-box dashboard-card"> 
+                <div class="one-block d-flex align-items-center justify-content-start">
+                    <div class="left">
+                        <div class="img-container" style="background: #eff3fa;">
+                            <img class="img-fluid" src="assets/images/icon-02.png">
+                        </div>
+                    </div>                                
+                    <div class="right">
+                        <label> Running Shipments </label>
+                        <h4> 460</h4>
+                    </div>
+                </div>
+            </div> <!-- card-box -->
+        </div> <!-- col-md-3 -->
+
+        <div class="col-md-3">
+            <div class="card-box dashboard-card"> 
+                <div class="one-block d-flex align-items-center justify-content-start">
+                    <div class="left">
+                        <div class="img-container" style="background: #e1e4ea;">
+                            <img class="img-fluid" src="assets/images/icon-03.png">
+                        </div>
+                    </div>                                
+                    <div class="right">
+                        <label> Scheduled Shipments </label>
+                        <h4> 460</h4>
+                    </div>
+                </div>
+            </div> <!-- card-box -->
+        </div> <!-- col-md-3 -->
+
+        <div class="col-md-3">
+            <div class="card-box dashboard-card"> 
+                <div class="one-block d-flex align-items-center justify-content-start">
+                    <div class="left">
+                        <div class="img-container" style="background: #fffae6;">
+                            <img class="img-fluid" src="assets/images/icon-04.png">
+                        </div>
+                    </div>                                
+                    <div class="right">
+                        <label> Pending Shipments </label>
+                        <h4> 460</h4>
+                    </div>
+                </div>
+            </div> <!-- card-box -->
+        </div> <!-- col-md-3 -->
+
+    </div> <!-- row --> 
+
+    <div class="d-flex justify-content-between align-items-start">
+
+        <div class="main-content d-flex  flex-direction-column" >
+
+
+            <div class="card-box dashboard-card width100"> 
+
+                <div class="dropdown float-right">
+                    <a class="btn btn-state nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> Monthly <i class="fa fa-chevron-down"></i> </a>
+
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item notify-item">
+                            <span> Today </span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <h3 class="header-title mt-0 mb-0">   Optimization Rate </h3>
+                <label style="font-size: 12px; margin-bottom: 0px;"> 2.5%+ than last month </label>
+
+                <div class="chartjs-chart">
+                    <!-- <p-chart type="line" [data]="data" (onDataSelect)="selectData($event)"></p-chart> -->
+                </div> <!-- chartjs-chart -->
+            </div> <!-- card-box --> 
+
+
+            <div class="card-box dashboard-card width100"> 
+
+                <div class="dropdown float-right">
+                    <a class="btn btn-state nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> Monthly <i class="fa fa-chevron-down"></i> </a>
+
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item notify-item">
+                            <span> Today </span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <h3 class="header-title mt-0 mb-0">   Optimization Rate </h3>
+                <label style="font-size: 12px; margin-bottom: 0px;"> 2.5%+ than last month </label>
+
+                <div class="chartjs-chart">
+                 <!--    <p-toast [style]="{marginTop: '80px'}"></p-toast> -->
+
+                    <p-chart type="line" [data]="data" (onDataSelect)="selectData($event)"></p-chart>
+                </div> <!-- chartjs-chart -->
+            </div> <!-- card-box --> 
+        </div>
+
+        <div class="updates d-flex flex-direction-column">
+
+            <div class="card-box dashboard-card width100"> 
+
+
+                <div class="updates-card-head d-flex align-items-center justify-content-between">
+
+                    <h3 class="header-title mt-0"> Latest Updates </h3>
+
+                    <div style="position: relative;">
+
+                        <a class="btn btn-state nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> Pending <i class="fa fa-chevron-down"></i> </a>
+
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item">
+                                <span> Pending </span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all-updates">
+                    
+                    <div class="updates-card">
+                        <div class="updates-head d-flex align-items-start justify-content-between mb-2">
+                            <div>
+                                <h5 class="m-0"> OB-10858・Single </h5>
+                                <label> Ref No. 2326453 </label>
+                            </div>
+                            <label style="color: #8a8b8f;">  1:30 PM </label>
+                        </div>
+
+                        <ul class="updates-list">
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a> 
+                                </div>
+                            </li>
+
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a>
+                                    <label> 8624, New Industrial City, Riyadh 14336, Saudi Arabia</label>
+                                </div>
+                            </li>
+
+
+
+
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a>
+                                    <label> 8624, New Industrial City, Riyadh 14336, Saudi Arabia</label>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div> <!-- updates-card -->
+                    
+
+                    <div class="updates-card">
+                        <div class="updates-head d-flex align-items-start justify-content-between mb-2">
+                            <div>
+                                <h5 class="m-0"> OB-10858・Single </h5>
+                                <label> Ref No. 2326453 </label>
+                            </div>
+                            <label style="color: #8a8b8f;">  1:30 PM </label>
+                        </div>
+
+                        <ul class="updates-list">
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a> 
+                                </div>
+                            </li>
+
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a>
+                                    <label> 8624, New Industrial City, Riyadh 14336, Saudi Arabia</label>
+                                </div>
+                            </li>
+
+                            <li class="d-flex"> 
+                                <div style="width: 10%">
+                                    <img src="assets/images/icon-05.png"> 
+                                </div>
+                                <div  style="width: 90%">
+                                    <a href="£"> Alshahd for Transportations · Fleet Provider 2  ·  Fleet Provider 3 </a>
+                                    <label> 8624, New Industrial City, Riyadh 14336, Saudi Arabia</label>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+                    </div> <!-- updates-card -->
+                    
+                </div> <!-- all-updates -->
+
+
+            </div> <!-- card-box -->  
+        </div>
+    </div> <!-- d-flex -->
+   

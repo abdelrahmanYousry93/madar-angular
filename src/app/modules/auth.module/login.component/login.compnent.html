@@ -22,14 +22,14 @@
                             <input class="form-control" type="text" id="digit2">
                         </div>
                         <div class="form-group mb-2 text-center">
-                            <button class="btn btn-primary btn-block" type="submit"> Sign In </button>
+                            <button class="btn btn-primary btn-block" [routerLink]="['/logedin']"> Sign In </button>
                         </div>
 
-                        <a href="#"> Forget Password </a>
+                        <a [routerLink]="['/mobileforgetpassword']"> Forget Password </a>
 
                         <div class="form-group mb-0 mt-3 text-center">
-                            <p> Creating an account means that you fully agree to our <a href="#"> Terms of Service and Conditions .</a> </p>
-                            <p> Dont have account?  <a href="#"> Signup! </a> </p>
+                            <p> Creating an account means that you fully agree to our <a [routerLink]="['/terms']"> Terms of Service and Conditions .</a> </p>
+                            <p> Dont have account?  <a [routerLink]="['/signup']"> Signup! </a> </p>
                         </div>
                     </form>
 

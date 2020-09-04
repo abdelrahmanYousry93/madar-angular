@@ -1,0 +1,151 @@
+
+                                <div class="card-box info-box company-info-content" style="min-height: unset;
+                                height: auto;">
+                            
+                                                                <div style="height: 100%;" class="d-flex flex-direction-column justify-content-between">
+                            
+                                                                    <div class="recievers-bulk-upload">
+                            
+                                                                        <a href="#" class="mb-3" style="color: #000"> <i class="fa fa-chevron-left"></i> Back </a>
+                                                                        <h4>  Bulk Upload Fleets  </h4>
+                            
+                                                                        <div class="company-info-stepper-section">
+                                                                                
+                                                                            <div class="company-info-stepper-container mb-2">
+                                                                                <div class="company-info-stepper html" style="width: 100%"> </div>
+                                                                            </div>
+                            
+                                                                            <div class="text-right" style="margin-bottom: -25px;">
+                                                                                <a style="color:#888"> 2 / 2 </a>
+                                                                            </div>
+                            
+                                                                        </div>
+                            
+                                                                        <h5 class="mb-1"> 2. Directions </h5>
+                            
+                                                                        <div class="row">
+                                                                            <div class="col">
+                            
+                            
+                            
+                                                                                <div class="info-box">
+                                                                                    <h5> Trip 1 direction </h5>
+                            
+                                                                                    <form>
+                            
+                                                                                            <div class="form-row">
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <label for="inputEmail4" class="col-form-label"> Contract From </label>
+                                                                                                    <input type="text" class="form-control" id="" placeholder="Place">
+                                                                                                </div> 
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <label for="inputEmail4" class="col-form-label"> To </label>
+                                                                                                    <input type="text" class="form-control" id="" placeholder="Place">
+                                                                                                </div>
+                            
+                                                                                            </div> <!-- form-row -->
+                            
+                            
+                                                                                            <div class="form-row">
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <label for="inputEmail4" class="col-form-label"> Distance </label>
+                                                                                                    <div style="position: relative;">
+                                                                                                        <input type="text" class="form-control" id="" placeholder="Enter the distance here">
+                                                                                                        <span style=" position: absolute; top: 9px; right: 10px; color: #b7b7b7;"> KG </span>
+                                                                                                    </div>
+                            
+                                                                                                </div>
+                            
+                                                                                                <div class="form-group col-md-6"></div>
+                            
+                                                                                            </div> <!-- form-row -->
+                            
+                            
+                                                                                            <div class="form-row">
+                            
+                                                                                                <div class="form-group col-md-12" style="margin: 0;">
+                                                                                                    <label for="inputEmail4" class="col-form-label"> Price </label>
+                                                                                                </div>
+                            
+                                                                                                <div class="form-group col-md-6">
+                            
+                                                                                                    <div class="custom-control custom-radio ">
+                                                                                                        <input type="radio" id="customRadio1" name="customRadio1" class="custom-control-input">
+                                                                                                        <label class="custom-control-label" for="customRadio1">Plans based on truck type </label>
+                                                                                                    </div>
+                            
+                                                                                                </div>
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <div class="custom-control custom-radio">
+                                                                                                        <input type="radio" id="customRadio2" name="customRadio1" class="custom-control-input">
+                                                                                                        <label class="custom-control-label" for="customRadio2"> Fixed Price </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                            
+                            
+                            
+                            
+                            
+                                                                                            <div class="form-row">
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <div>
+                                                                                                        <label for="inputEmail4" class="col-form-label"> Truck Type </label> 
+                                                                                                    </div>
+                                                                                                        <p-dropdown [options]="tranker" [(ngModel)]="selecttrunk" [ngModelOptions]="{standalone: true}" [style]="{'width':'80%'}" placeholder="Choose ..." optionLabel="name" [showClear]="true"></p-dropdown>
+                            
+                                                                                                </div> 
+                            
+                            
+                                                                                                <div class="form-group col-md-6">
+                                                                                                    <label for="inputEmail4" class="col-form-label"> Price </label>
+                                                                                                    <div style="position: relative;">
+                                                                                                        <input type="text" class="form-control" id="" placeholder="No.">
+                                                                                                        <span style=" position: absolute; top: 9px; right: 10px; color: #b7b7b7;"> SAR </span>
+                                                                                                    </div>
+                            
+                                                                                                </div>
+                            
+                                                                                            </div> <!-- form-row -->
+                            
+                            
+                                                                                            <div class="form-group mb-2 text-center mt-3">
+                                                                                                <input type="file" class="dropify" data-height="90" />
+                                                                                            </div>
+                                                                                            <a class="btn btn-plus" href="#"> <i class="fas fa-plus-circle"></i> Add Another Direction </a>
+                            
+                            
+                                                                                    </form>
+                            
+                                                                                </div>
+                            
+                            
+                            
+                            
+                                                                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                                                                    <a class="btn btn-custom1" [routerLink]="['/location/contracts']"> Cancel </a>
+                                                                                    <a class="btn btn-primary" [routerLink]="['/location/contracts']"> Next </a>
+                                                                                </div>
+                            
+                            
+                                                                            </div> <!-- col -->
+                                                                        </div> <!-- row -->
+                            
+                            
+                             
+                             
+                            
+                            
+                                                                    </div>
+                            
+                             
+                                                                    </div>
+                            
+                                                                </div>
+                            
+                                                   
