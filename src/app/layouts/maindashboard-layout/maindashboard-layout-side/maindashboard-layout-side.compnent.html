@@ -13,20 +13,20 @@
 
 
                     <li>
-                        <a href="index.html">
+                        <a [routerLink]="['/main/dashboard']">
                             <i class="mdi mdi-view-dashboard"></i>
                             <span> Dashboard </span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html">
+                        <a [routerLink]="['/main/shipmentlist']">
                             <i class="mdi mdi-view-dashboard"></i>
                             <span> Shipments </span>
                             <span class="badge badge-Light float-right"> 4390 </span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html">
+                        <a [routerLink]="['/main/allfleet']">
                             <i class="mdi mdi-view-dashboard"></i>
                             <span> Fleet Providers </span>
                         </a>
@@ -45,11 +45,10 @@
                             <span class="menu-arrow"></span>
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="#">Recievers</a></li>
-                            <li><a href="#">Packages</a></li>
-                            <li><a href="#">Users</a></li>
-                            <li><a href="#">Company Settings</a></li>
-                            <li><a href="#">Notification Settings</a></li>
+                            <li><a [routerLink]="['/main/RecieversListComponent']">Recievers</a></li>
+                          <!--   <li><a [routerLink]="['/main/RecieversListComponent']">Packages</a></li>-->                            <li><a [routerLink]="['/main/UsersListComponent']">Users</a></li>
+                            <li><a [routerLink]="['/main/CompanySettingsComponent']">Company Settings</a></li>
+                            <li><a [routerLink]="['/main/NotificationSettingsComponent']">Notification Settings</a></li>
 
                         </ul>
                     </li>
@@ -62,7 +61,7 @@
             <div class="clearfix"></div>
 
             <div class="sidebar-left-bottom text-center">
-                <a class="btn create-new-shipment" href="#"> <i class="fas fa-plus-circle"></i> Create New Shipment </a>
+                <a class="btn create-new-shipment" [routerLink]="['/main/createshipment']"> <i class="fas fa-plus-circle"></i> Create New Shipment </a>
 
                 <hr>
 

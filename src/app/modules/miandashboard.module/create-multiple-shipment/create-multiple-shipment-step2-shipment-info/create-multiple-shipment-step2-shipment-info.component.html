@@ -1,0 +1,151 @@
+<div class="container-fluid shipments-list-page">
+
+    <div class="d-flex align-items-center justify-content-between mt-3">
+        <h3 class="mb-2"> Create multiple Shipment </h3>    
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+
+            <shared-stepper-multi></shared-stepper-multi>
+        </div>
+        <div class="col-md-9">
+            <div class="card-box" style=" min-height: 590px;">
+
+
+                <div class="create-multiple-shipment">
+
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h4 class="bold"> Shipment No.1  <i class="fa fa-edit"></i> </h4>
+                        <a class="btn btn-plus red" href="#"> <i class="fas fa-trash"></i> Delete Shipment </a>
+                    </div>
+
+                    <div class="form-row">
+                        
+                        <div class="form-group col-md-12 mb-1">
+                            <label > Pickup Location </label>
+                            <div class="form-group ">
+                                <select class="form-control select2">
+                                    <option> Select location </option>
+                                    <option value="CT"> 01</option>
+                                    <option value="DE"> 02 </option>
+                                </select>
+                            </div>
+                        </div> <!-- form-group -->
+
+
+
+
+                        <div class="form-group col-md-6 mb-1">
+                            <label > Select Package </label>
+                            <div class="form-group ">
+                                <select class="form-control select2">
+                                    <option> Package </option>
+                                    <option value="CT"> 01</option>
+                                    <option value="DE"> 02 </option>
+                                </select>
+                            </div>
+                        </div> <!-- form-group -->
+
+                        <div class="form-group col-md-6 mb-1">
+                        </div> <!-- form-group -->
+
+
+
+                        <div class="form-group col-md-6 mb-1">
+                            <label > Type </label>
+                            <div class="form-group ">
+                                <select class="form-control select2">
+                                    <option> Plastic </option>
+                                    <option value="CT"> 01</option>
+                                    <option value="DE"> 02 </option>
+                                </select>
+                            </div>
+                        </div> <!-- form-group -->
+
+
+
+                        <div class="form-group col-md-6 mb-1">
+                                <label > Size (M) </label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control" id="" placeholder="Length">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control" id="" placeholder="Width">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control" id="" placeholder="Height">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- form-group -->
+
+
+
+
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4" class="col-form-label"> Weight </label>
+                            <div style="position: relative;">
+                                <input type="text" class="form-control" id="" placeholder="KG">
+                                <span style=" position: absolute; top: 9px; right: 10px; color: #b7b7b7;"> KG </span>
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4" class="col-form-label"> Quantity </label>
+                            <div style="position: relative;">
+                                <input type="text" class="form-control" id="" placeholder="No.">
+                                <span style=" position: absolute; top: 9px; right: 10px; color: #b7b7b7;"> PCS </span>
+                            </div>
+                        </div>
+                        
+                       <div >
+                            <a class="btn btn-plus" href="#"> <i class="fas fa-plus-circle"></i> Add Package </a>
+                        </div>
+
+                    </div> <!-- form-row -->
+
+                    <hr> 
+
+                    <div class="form-group col-md-6 mb-1">
+                        <label > Receiving Company </label>
+                        <div class="form-group ">
+                            <select class="form-control select2">
+                                <option> Select Company Name </option>
+                                <option value="CT"> 01</option>
+                                <option value="DE"> 02 </option>
+                            </select>
+                        </div>
+                    </div> <!-- form-group -->
+
+                </div> <!-- create-multiple-shipment -->
+
+
+
+
+
+
+
+               <div style="display: block; width: 100%;">
+                    <a style="padding: 7px;border: 2px dashed;display: block;width: 100%;position: relative;margin: 5px;" class="btn btn-plus" href="#"> <i class="fas fa-plus-circle"></i> Add Package </a>
+                </div>
+
+                    <div class="form-group col-md-12 ">
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <a class="btn btn-custom1" [routerLink]="['/main/CreateMultipleShipmentStep1BasicInfoEmptyComponent']"> Cancel </a>
+                            <a class="btn btn-primary" [routerLink]="['/main/CreateMultipleShipmentStep2ShipmentInfoLocationComponent']"> Next </a>
+                        </div>
+                    </div><!-- input-group -->  
+            </div> <!-- card-box -->
+        </div> <!-- col-md-9 -->
+    </div> <!-- row -->
+
+</div> <!-- container -->

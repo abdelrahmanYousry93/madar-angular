@@ -1,0 +1,28 @@
+<div class="container-fluid shipments-list-page">
+
+    <div class="d-flex align-items-center justify-content-between mt-3">
+        <h3 class="mb-2"> Create Multiple Shipment </h3>    
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+
+            <shared-stepper-multi></shared-stepper-multi>
+        </div>
+        <div class="col-md-9">
+            <div class="card-box" style=" min-height: 590px;">
+
+                <div class="recievers d-flex align-items-center justify-content-center flex-direction-column">
+                    <img style="max-width: 430px" class="img-fluid" src="assets/images/boxes.png">
+                    <h4 (click)="runStepper()"> What are you going to ship? </h4>
+                    <p> List all packages that you have in your company for better shipments order.</p>
+                    <div class=" btns d-flex align-items-center justify-content-center">
+                        <a class="btn btn-primary" [routerLink]="['/main/CreateMultipleShipmentStep1BasicInfoComponent']"> Add Your Packages </a>
+                    </div>
+                </div>
+
+            </div> <!-- card-box -->
+        </div> <!-- col-md-9 -->
+    </div> <!-- row -->
+
+</div> <!-- container -->

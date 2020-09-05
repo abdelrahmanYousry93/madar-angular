@@ -1,0 +1,30 @@
+
+                    <div class="container-fluid shipments-list-page">
+
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <h3 class="mb-2"> Create Single Shipment </h3>    
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+ 
+                                <shared-stepper></shared-stepper>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-box" style=" min-height: 590px;">
+
+                                    <div class="recievers d-flex align-items-center justify-content-center flex-direction-column">
+                                        <img style="max-width: 430px" class="img-fluid" src="assets/images/truck.png">
+                                        <h4> Who is going to Deliver? </h4>
+                                        <p>  Add all fleets you have contracted with to ship your orders to make the shipment order prepared. </p>
+                                        <div class=" btns d-flex align-items-center justify-content-center">
+                                            <a class="btn btn-primary" [routerLink]="['/main/createsinglecontractaddfleet']"> Add Contracted Fleet </a>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- card-box -->
+                            </div> <!-- col-md-9 -->
+                        </div> <!-- row -->
+
+                    </div> <!-- container -->
+              

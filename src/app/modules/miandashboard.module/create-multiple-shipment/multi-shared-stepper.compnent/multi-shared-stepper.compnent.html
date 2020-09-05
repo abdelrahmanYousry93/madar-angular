@@ -1,0 +1,39 @@
+<div class="card-box stepper-box" style="margin: 0;min-height: 590px;">
+    <circle-progress
+    [percent]="85"
+    [radius]="51"
+    [outerStrokeWidth]="5"
+    [innerStrokeWidth]="5"
+    [outerStrokeColor]="'#78C000'"
+    [innerStrokeColor]="'#eff3fb'"
+    [animation]="true"
+    [animationDuration]="1000"
+></circle-progress>
+
+    <h4 class="text-center mb-3"> New Shipment </h4>
+
+    <div class="steps-menu">
+
+            <div class="custom-control custom-radio mb-2">
+                <input checked="checked" type="radio" [routerLink]="['/main/CreateMultipleShipmentStep1BasicInfoComponent']" id="customRadio1" name="customRadio1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1"> Basic Information </label>
+                <span>  Shipment name, Pickup Dates and locations.  </span>
+            </div>
+
+
+            <div class="custom-control custom-radio mb-2">
+                <input type="radio" id="customRadio2"  [routerLink]="['/main/CreateMultipleShipmentStep2ShipmentInfoComponent']" name="customRadio2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2"> Shipment Information </label>
+                <span> Add package for shipments, weights, quantity and sizes. </span>
+            </div>
+
+
+          
+
+            <div class="custom-control custom-radio mb-2">
+                <input type="radio" id="customRadio4" [routerLink]="['/main/CreateMultipleShipmentStep3ChooseFleetComponent']" name="customRadio4" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio4"> Choose Fleet Provider </label>
+                <span> Add package for shipments, weights, quantity and sizes. </span>
+            </div>
+    </div>
+</div> <!-- card-box --> 

@@ -7,3 +7,16 @@
 :host ::ng-deep .p-dropdown { width: 14rem;
 } .country-item-value { img.flag { width: 17px; }
 }
+.card-box.stepper-box svg {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.card-box.stepper-box.location svg  {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-left: 30px;
+}

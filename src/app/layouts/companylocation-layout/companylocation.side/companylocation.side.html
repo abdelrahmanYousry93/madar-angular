@@ -1,29 +1,15 @@
-<div class="card-box stepper-box">
-    <a href="#" class="mb-3" style="color: #000"> <i class="fa fa-chevron-left"></i> Skip </a>
-    <div class="stepper">
-
-        <svg id="animated" viewbox="-10 0 120 100">
-
-          <circle cx="50" cy="50" r="45" fill="#FFF"/>
-
-          <path id="" stroke-linecap="round" stroke-width="5" stroke="#eff3fb" fill="none"
-                d="M50 10
-                   a 40 40 0 0 1 0 80
-                   a 40 40 0 0 1 0 -80">
-          </path>
-
-          <path id="progress" stroke-linecap="round" stroke-width="5" stroke="#36b37e" fill="none"
-                d="M50 10
-                   a 40 40 0 0 1 0 80
-                   a 40 40 0 0 1 0 -80">
-          </path>
-
-          <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>
-
-        </svg>
-
-
-    </div>
+<div class="card-box stepper-box location">
+    <!-- <a href="#" class="mb-3" style="color: #000"> <i class="fa fa-chevron-left"></i> Skip </a>
+ -->    <circle-progress
+    [percent]="85"
+    [radius]="51"
+    [outerStrokeWidth]="5"
+    [innerStrokeWidth]="5"
+    [outerStrokeColor]="'#78C000'"
+    [innerStrokeColor]="'#eff3fb'"
+    [animation]="true"
+    [animationDuration]="1000"
+></circle-progress>
 
     <h4 class="text-center mb-4"> Company Setup </h4>
 

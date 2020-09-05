@@ -28,10 +28,13 @@ import { FormsModule } from '@angular/forms';
 import { ContractFleetListComponent } from './contracts/contract-fleet-list.compnent/contract-fleet-list.compnent';
 import { ContractBulkUploadComponent } from './contracts/contract-bulkupload.compnent/contract-bulkupload.compnent';
 import { ContractBulkUploadStep2Component } from './contracts/contract-bulkuploadstep2.compnent/contract-bulkuploadstep2.compnent';
+import { CompanyLocationSideComponent } from 'src/app/layouts/companylocation-layout/companylocation.side/companylocation.side';
+
 @NgModule({
   imports: [
     CommonModule,FormsModule,
     RouterModule.forChild(CompanyLocationRoutes),DialogModule,ChartModule,DropdownModule
+   
   ],
   declarations: [AddCompanyLocationComponent,
     ColorLogoCompanyLocationComponent,
@@ -40,6 +43,9 @@ import { ContractBulkUploadStep2Component } from './contracts/contract-bulkuploa
     ReciverBulkUploadComponent,BulkUploadSummeryComponent,PackagesComponent,AddPackageComponent,PackagesListComponent
   ,UsersComponent,AddUserComponent,UserListComponent,OnboardingComponent,
   ContractsComponent,ContractListComponent,ContractPublicListComponent,ContractFleetListComponent,
-  ContractBulkUploadComponent,ContractBulkUploadStep2Component]
+  ContractBulkUploadComponent,ContractBulkUploadStep2Component],
+  
+  bootstrap: [CompanyLocationSideComponent]
+  
 })
 export class CompanyLocationModule {}

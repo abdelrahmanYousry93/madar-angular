@@ -1,0 +1,228 @@
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <h3 class="mb-3"> Upload Bulk Shipment </h3> 
+                        </div>
+ 
+
+
+                            <div class="card-box padding0" style="border: 1px solid #e4e9f3;"> 
+
+
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th> Shipment Name </th>
+                                            <th> Reciever company </th>
+                                            <th> Fleet Provider  </th>
+                                            <th> Volume </th>
+                                            <th> Weight </th>
+                                            <th> Scheduled time </th>
+                                            <th> Errors </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            
+                                        <tr> 
+                                            <td>  <a (click)="showDialog()"  data-animation="fadein" data-plugin="custommodal" data-overlayColor="#36404a">  #10858 - OB  </a>  </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="green"> <i class="fa fa-check"></i> No Errors</p> </td> 
+                                        </tr>
+
+
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="red"> <i class="fa fa-times"></i> Reciver company not found</p> </td> 
+                                        </tr>
+
+                                            
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="green"> <i class="fa fa-check"></i> No Errors</p> </td> 
+                                        </tr>
+
+
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="red"> <i class="fa fa-times"></i> Reciver company not found</p> </td> 
+                                        </tr>
+
+                                            
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="green"> <i class="fa fa-check"></i> No Errors</p> </td> 
+                                        </tr>
+
+
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="red"> <i class="fa fa-times"></i> Reciver company not found</p> </td> 
+                                        </tr>
+
+                                            
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="green"> <i class="fa fa-check"></i> No Errors</p> </td> 
+                                        </tr>
+
+
+                                        <tr> 
+                                            <td> #10858 - OB </td>
+                                            <td> Canon Compan…</td>
+                                            <td> Fugji Limited in.. </td>
+                                            <td> 1230 M2 </td>
+                                            <td> 3215 KG </td>
+                                            <td> 15 May 2020, 12:00 PM </td> 
+                                            <td> <p class="red"> <i class="fa fa-times"></i> Reciver company not found</p> </td> 
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="m-3">
+
+                                      <ul class=" pagination">
+                                        <li class="page-item"><a class="page-link" href="#"> <i class="fa fa-chevron-left"></i> </a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> <i class="fa fa-chevron-right"></i> </a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      </ul>
+
+
+                                    <div class=" d-flex align-items-center justify-content-between mt-3">
+                                            <a class="btn btn-custom1" [routerLink]="['/main/CreateBulkShipmentComponent']"> Cancel </a>
+                                        <div>
+                                            <a class="btn btn-custom1"  [routerLink]="['/main/CreateBulkShipmentComponent']" > Back </a>
+                                            <a class="btn btn-primary"  [routerLink]="['/main/CreateBulkShipmentDetailsComponent']" > Next </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- card-box -->
+
+
+
+
+                </div> <!-- container -->
+
+
+
+                <p-dialog header="#10858 - OB Details " [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                [draggable]="false" [resizable]="false">
+                    <div class="custom-modal-text">
+ 
+
+                            <div class="packages">
+
+
+                                
+                                <div class="one-package">
+
+ 
+
+                                    <h4> Package Name 1 </h4>
+
+                                    <div class="row mb-1">
+                                        <div class="col">
+                                            <p class="m-0"> Package Type  </p>
+                                            <label class="bold"> Plastic 501 </label>
+                                        </div>
+                                        <div class="col">
+                                            <p class="m-0"> Quantity </p>
+                                            <label class="bold"> 3500 PCS  </label>
+                                        </div>
+                                        <div class="col">
+                                            <p class="m-0"> Weight </p>
+                                            <label class="bold"> 200 KG  </label>
+                                        </div>
+                                    </div> <!-- row mb-2 -->
+
+                                    <div class="row mb-1">
+                                        <div class="col">
+                                            <p class="m-0"> Length  </p>
+                                            <label class="bold"> 40 CM </label>
+                                        </div>
+                                        <div class="col">
+                                            <p class="m-0"> Width </p>
+                                            <label class="bold"> 3500 PCS  </label>
+                                        </div>
+                                        <div class="col">
+                                            <p class="m-0"> Height </p>
+                                            <label class="bold"> 15 CM  </label>
+                                        </div>
+                                    </div> <!-- row mb-2 -->
+
+
+                                    <div class="one-package-footer">
+                                        
+                                        <h4 class="blue"> Reciever Information </h4>
+
+                                        <div class="row mb-1">
+                                            <div class="col">
+                                                <p class="m-0"> Reciever Company  </p>
+                                                <label class="bold"> Tremoloo </label>
+                                            </div>
+                                            <div class="col">
+                                                <p class="m-0"> Reciever Name </p>
+                                                <label class="bold"> 3500 PCS  </label>
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div> <!-- row mb-2 -->
+
+                                        <p> Drop-off Location </p>
+                                        <label class="bold"> 8624, New Industrial City, Riyadh 14336, Saudi Arabia </label>
+                                    </div> <!-- one-package-head -->
+
+
+                                </div> <!-- one-package -->
+
+                            </div> <!-- packages -->
+                            
+                    </div>
+
+                    <p-footer>
+                        <a  class="btn btn-custom1" href="#" style="margin-top: 10px;;"> Cancel  </a>
+                    </p-footer>
+
+                </p-dialog> 

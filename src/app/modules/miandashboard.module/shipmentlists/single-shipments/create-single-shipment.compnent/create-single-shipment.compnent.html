@@ -1,0 +1,124 @@
+
+                    <div class="container-fluid shipments-list-page">
+
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <h3 class="mb-2"> Create Single Shipment </h3>    
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+ <shared-stepper></shared-stepper>
+                        <!-- stepper Here -->
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-box" style=" min-height: 590px;">
+                                    <div class="form-row">
+                                        
+                                        <div class="form-group col-md-6 mb-3">
+                                            <label class="d-flex justify-content-between align-items-center"> <span> Shipment Name </span> <span style="color: #c3c9d5;">  Optional  </span> </label>
+                                            <input type="text" class="form-control" id="" placeholder="Shipment Name ">
+                                        </div> <!-- form-group -->
+
+                                        <div class="form-group col-md-6 mb-3">
+                                                <p style="margin: 0; margin-top: 30px; margin-left: 10px;color: #c3c9d5;"> <i class="fa fa-info"></i> Reference number (#) is auto genrated by the system. </p>
+                                        </div> <!-- form-group -->
+
+
+                                        <div class="input-group col-md-6 mb-3">
+                                            <label class="d-flex width100"> Pickup Date  </label>
+                                            <input type="text" class="form-control datepicker-autoclose"  placeholder="mm/dd/yyyy" id="datepicker-autoclose">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="ti-calendar"></i></span>
+                                            </div>
+                                        </div><!-- input-group -->
+
+                                        <div class="input-group col-md-6 mb-3"> 
+                                            <label> Time </label>
+                                            <div class="input-group">
+                                                <input id="timepicker" type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="mdi mdi-clock-outline"></i></span>
+                                                </div>
+                                            </div><!-- input-group --> 
+                                        </div><!-- input-group -->
+  
+
+                                        <div class="form-group col-md-12 mb-3">
+                                            <label > Pickup Location </label>
+                                            <div class="form-group ">
+                                                <select class="form-control select2">
+                                                    <option> Select location </option>
+                                                    <option value="CT"> 01</option>
+                                                    <option value="DE"> 02 </option>
+                                                </select>
+                                            </div>
+                                            <a class="btn btn-plus" href="#"> <i class="fas fa-plus-circle"></i> Add Another Direction </a>
+                                        </div> <!-- form-group -->
+
+                                        <div class="input-group col-md-6 ">
+                                            <label class="d-flex width100"> Delivery Date  </label>
+                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="ti-calendar"></i></span>
+                                            </div>
+                                        </div><!-- input-group -->
+
+                                        <div class="input-group col-md-6 "> 
+                                            <label> Time </label>
+                                            <div class="input-group">
+                                                <input id="timepicker" type="text" class="form-control timepicker">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="mdi mdi-clock-outline"></i></span>
+                                                </div>
+                                            </div><!-- input-group --> 
+                                        </div><!-- input-group -->
+
+                                        <div class="form-group col-md-6 ">
+
+                                            <div class="checkbox checkbox-primary pl-2 ">
+                                                <input id="checkbox2" type="checkbox">
+                                                <label for="checkbox2" class="d-flex width100 m-0"> Recurrence </label>
+                                                <small style="margin-left: 8px;"> Select If this shipment repeats every specific days per week </small>
+                                            </div>
+
+                                        </div><!-- input-group -->
+
+
+                                        <div class="input-group col-md-12 mb-2 recuring-days"> 
+                                            <label class="d-flex align-items-center width100"> Recuring days </label>
+                                            <div class="all-dayes d-flex justify-content-center align-items-center">
+                                                <div class="one-day"> Sat </div>
+                                                <div class="one-day active"> Sun </div>
+                                                <div class="one-day"> Mon </div>
+                                                <div class="one-day active"> Tue </div>
+                                                <div class="one-day"> Wed </div>
+                                                <div class="one-day"> Thr </div>
+                                                <div class="one-day"> Fri </div>
+                                            </div>
+                                        </div><!-- input-group -->
+
+                                        <div class="input-group col-md-6 mb-2 recuring-days"> 
+                                            <label class="d-flex align-items-center width100"> Repeats Every </label>
+                                            <select class="form-control select2">
+                                                <option> Select Weeks </option>
+                                                <option value="CT">option1</option>
+                                                <option value="DE">option2</option>
+                                            </select>
+                                        </div><!-- input-group -->
+
+                                        <div class="form-group col-md-12 ">
+
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <a class="btn btn-custom1" href="#"> Cancel </a>
+                                                <a class="btn btn-primary" [routerLink]="['/main/createsingleshipmentinfo']"> Next </a>
+                                            </div>
+
+                                        </div><!-- input-group -->
+
+                                    </div> <!-- form-row -->
+                                </div> <!-- card-box -->
+                            </div> <!-- col-md-9 -->
+                        </div> <!-- row -->
+
+                    </div> <!-- container -->
+           

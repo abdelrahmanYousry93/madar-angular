@@ -16,6 +16,8 @@ import { CompanyLocationSideComponent } from './layouts/companylocation-layout/c
 import { MainDashboardHeaderLayoutComponent } from './layouts/maindashboard-layout/maindashboard-layout-header/maindashboard-layout-header.compnent';
 import { MainDashboardSideLayoutComponent } from './layouts/maindashboard-layout/maindashboard-layout-side/maindashboard-layout-side.compnent';
 import { MainDashboardLayoutComponent } from './layouts/maindashboard-layout/maindashboard-layout.compnent';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @NgModule({
   declarations: [
     AppComponent,AuhtLayoutComponent,
@@ -34,7 +36,18 @@ import { MainDashboardLayoutComponent } from './layouts/maindashboard-layout/mai
   
   imports: [
     BrowserModule,BrowserAnimationsModule,NoopAnimationsModule,
-    RouterModule.forRoot(AppRoutes),DropdownModule,InputTextModule
+    RouterModule.forRoot(AppRoutes),DropdownModule,InputTextModule,
+    NgCircleProgressModule.forRoot({
+      "radius": 51,
+      "space": -5,
+      "toFixed": 0,
+      "maxPercent": 100,
+      "outerStrokeWidth": 5,
+      "innerStrokeColor": "#ededed",
+      "innerStrokeWidth": 5,
+      "showSubtitle": false,
+      "showBackground": false
+    })
                    
   ],
   providers: [],
